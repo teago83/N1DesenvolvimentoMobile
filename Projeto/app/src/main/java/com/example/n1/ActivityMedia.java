@@ -18,15 +18,9 @@ public class ActivityMedia extends AppCompatActivity {
 
         Intent IncomingIntent = getIntent();
 
-        //String IncomingNota1 = IncomingIntent.getIntExtra("Nota1", )
-        //NotaNumero1.setText("4");
-        //String IncomingNota2 = IncomingIntent.getStringExtra("Nota2");
-        //NotaNumero2.setText(IncomingNota2);
+        Integer IncomingNota1 = IncomingIntent.getIntExtra("Nota1", 0);
+        NotaNumero1.setText(String.valueOf(IncomingNota1));
+        Integer IncomingNota2 = IncomingIntent.getIntExtra("Nota2", 0);
+        NotaNumero2.setText(String.valueOf(IncomingNota2));
     }
 }
-
-/*      // Mensagem com o nome do usuário vindo da primeira tela.
-        TextView MensagemNotas = (TextView) findViewById(R.id.MensagemNotas);
-        Intent IncomingIntent = getIntent();
-        String IncomingName = IncomingIntent.getStringExtra("Username");
-        MensagemNotas.setText("Digite suas notas, " + IncomingName + ".");*/
