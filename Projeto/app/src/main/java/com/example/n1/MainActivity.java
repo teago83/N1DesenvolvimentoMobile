@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 Name = InputName.getText().toString();
                 Intent IrSegundaTela = new Intent(MainActivity.this, ActivityNotas.class);
                 // adicione o esquema de catar o nome da pessoa e passar para a intent
+
+                IrSegundaTela.putExtra("Username", Name);
                 startActivity(IrSegundaTela);
 
                 showToast(Name);
