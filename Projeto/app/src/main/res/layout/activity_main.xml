@@ -27,18 +27,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="339dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="80dp"
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/BotaoSegundaTela"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

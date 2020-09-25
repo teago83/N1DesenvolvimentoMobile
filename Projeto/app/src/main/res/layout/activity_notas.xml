@@ -33,45 +33,38 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.035" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="242dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.614">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="248dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="460dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/BotaoTerceiraTela"
         android:layout_width="168dp"
         android:layout_height="56dp"
         android:text="Calcular Média"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="424dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/nota1"
+        app:layout_constraintVertical_bias="0.006" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
