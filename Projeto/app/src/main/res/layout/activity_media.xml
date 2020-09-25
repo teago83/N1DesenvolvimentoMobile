@@ -7,69 +7,90 @@
     tools:context=".ActivityMedia">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="142dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:text="NOTA 1:"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="142dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:text="NOTA 2:"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
         android:id="@+id/nota1"
         android:layout_width="142dp"
         android:layout_height="45dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="112dp"
         android:text="X"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nota2"
+        android:id="@+id/media"
         android:layout_width="142dp"
         android:layout_height="45dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="108dp"
-        android:text="Y"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:text="Z"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="142dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:text="MÉDIA"
+        android:layout_marginTop="12dp"
+        android:text="MÉDIA:"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/media"
+        android:id="@+id/textView4"
         android:layout_width="142dp"
         android:layout_height="45dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="108dp"
-        android:text="Z"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="NOTA 1:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nota2"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:text="Y"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="NOTA 2:"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <WebView
+        android:id="@+id/resultGif"
+        android:layout_width="411dp"
+        android:layout_height="327dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/parabensOuNen"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:text="Você foi A, B!, C!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultGif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/media"
+        app:layout_constraintVertical_bias="0.202" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
