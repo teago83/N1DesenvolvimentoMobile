@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ActivityNotas extends AppCompatActivity {
 
@@ -13,6 +14,14 @@ public class ActivityNotas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notas);
+
+        TextView MensagemNotas = (TextView) findViewById(R.id.MensagemNotas);
+
+        Intent IncomingIntent = getIntent();
+
+        String IncomingName = IncomingIntent.getStringExtra("Username");
+
+        MensagemNotas.setText("Digite suas notas, " + IncomingName + ".");
 
         Button BotaoTerceiraTela = (Button) findViewById(R.id.BotaoTerceiraTela);
         BotaoTerceiraTela.setOnClickListener(new View.OnClickListener() {

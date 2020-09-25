@@ -31,13 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                 IrSegundaTela.putExtra("Username", Name);
                 startActivity(IrSegundaTela);
-
-                showToast(Name);
             }
         });
-    }
-
-    private void showToast(String text){
-        Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 }
